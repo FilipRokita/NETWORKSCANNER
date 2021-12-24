@@ -37,7 +37,7 @@ def scan():
 if __name__ == '__main__':
     root = tk.Tk()
     root.title('NETWORKSCANNER')
-    root.geometry('300x120')
+    root.geometry('300x150')
     root.resizable(False, False)
 
     networkVar = tk.StringVar()
