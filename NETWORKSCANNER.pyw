@@ -1,6 +1,7 @@
 #NETWORKSCANNER
 #Filip Rokita
 #www.filiprokita.com
+#(incognito) https://www.opentechguides.com/how-to/article/python/57/python-ping-subnet.html
 
 #import
 import ipaddress
