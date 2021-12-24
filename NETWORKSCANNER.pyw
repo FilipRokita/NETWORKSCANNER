@@ -18,14 +18,14 @@ def scan():
     for host in network.hosts():
         root.update()
         host = str(host)
-        if os.system(f'ping -n 1 -w 500 {host}') == 0:
+        if os.system(f'ping -n 1 -w 100 {host}') == 0:
             online = online + f'{host} is Online\n'
 
     f = open('NETWORKSCANNER-RESULTS.txt', 'w')
     f.write(online)
     f.close()
 
-    os.system(f'start notepad NETWORKSCANNER-RESULTS.txt')
+    os.system('start notepad NETWORKSCANNER-RESULTS.txt')
 
     scanB.configure(text='SCAN', state=tk.NORMAL)
 
